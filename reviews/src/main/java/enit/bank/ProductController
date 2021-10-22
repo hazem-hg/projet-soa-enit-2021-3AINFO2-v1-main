@@ -1,0 +1,19 @@
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+public class Controller {
+
+    //Récupérer la liste des produits
+    @RequestMapping(value="/Produits", method=RequestMethod.GET)
+    public String listeProduits() {
+        return"produit";
+    }
+
+    //Récupérer un produit par son Id
+    @GetMapping(value="/Produits/{id}")
+    public Product afficherUnProduit(@PathVariable int id) {
+        Product product=new Product(id, new String("Papier"), 50 );
+        var product1 = product;
+        return product1;
+    }
+}
