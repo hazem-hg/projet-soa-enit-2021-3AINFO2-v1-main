@@ -1,0 +1,10 @@
+POST http://localhost:8082/feedback
+Content-Type: application/json
+
+{
+  "name": "hazem",
+  "email": "hazem.gader@etudiant-enit.utm.tn",
+  "feedback": "it's amazing, your platform offers many products choices"
+}
+
+###
